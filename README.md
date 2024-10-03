@@ -17,3 +17,9 @@ esta aplicación, los usuarios podrán entender mejor sus hábitos de gasto, ide
 - **Resumen Financiero Simple**: Ofrece un resumen de las finanzas, incluyendo el saldo disponible, el total de ingresos y el total de gastos, lo que permite a los usuarios darse cuenta de su situación financiera.
 - **Alertas Simples**: Notificaciones automáticas cuando el saldo disponible se acerque a cero, ayudando a los usuarios a evitar gastos excesivos y a mantener un control constante de sus finanzas.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## Mockups
+![image](https://github.com/user-attachments/assets/c76d5406-5def-4aaa-8e7a-795b26ed4cf2)
+![image](https://github.com/user-attachments/assets/c6bfa24d-66af-43ae-aaff-9baeb6153ea4)
+![image](https://github.com/user-attachments/assets/e07f9828-e6c4-48d5-9200-2d4866b5396b)
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
