@@ -1,7 +1,7 @@
 # Anchia-Finance
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # Descripción del Proyecto
-Es una aplicación móvil diseñada para empoderar a los usuarios en la gestión de sus finanzas personales. 
+Aplicación móvil diseñada para empoderar a los usuarios en la gestión de sus finanzas personales. 
 En un mundo donde la administración adecuada de los recursos económicos es crucial, esta aplicación ofrece una 
 solución intuitiva y eficaz para registrar ingresos y gastos de forma sencilla. Los usuarios pueden establecer un 
 fondo inicial, que servirá como punto de partida para su gestión financiera, y recibir un resumen claro y conciso de su situación financiera en todo momento.
