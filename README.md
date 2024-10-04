@@ -18,8 +18,20 @@ esta aplicación, los usuarios podrán entender mejor sus hábitos de gasto, ide
 - **Alertas Simples**: Notificaciones automáticas cuando el saldo disponible se acerque a cero, ayudando a los usuarios a evitar gastos excesivos y a mantener un control constante de sus finanzas.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Mockups
-![image](https://github.com/user-attachments/assets/c76d5406-5def-4aaa-8e7a-795b26ed4cf2)
-![image](https://github.com/user-attachments/assets/c6bfa24d-66af-43ae-aaff-9baeb6153ea4)
-![image](https://github.com/user-attachments/assets/e07f9828-e6c4-48d5-9200-2d4866b5396b)
+![image](https://github.com/user-attachments/assets/4ac0a124-9f91-42d4-8000-1479e68e31bd)
+![image](https://github.com/user-attachments/assets/73fd1f41-031b-4ded-b7e3-d58378770ac3)
+![image](https://github.com/user-attachments/assets/181ecb0e-0752-4275-9e1b-7bddc9847746)
+![image](https://github.com/user-attachments/assets/5e40fa39-f3a2-41d4-8045-646e9124421e)
+![image](https://github.com/user-attachments/assets/a1d67b1e-ca5a-4095-9abc-d2ea1b4f6522)
+![image](https://github.com/user-attachments/assets/d63fc33a-b999-4f69-b29e-942c8ad2e830)
+![image](https://github.com/user-attachments/assets/bf4237bc-b14f-4a69-bd85-53657c98d52a)
+![image](https://github.com/user-attachments/assets/d827a3b3-a6de-4b33-b728-f8cd39ba79d8)
+![image](https://github.com/user-attachments/assets/83514dd7-5daf-4117-be75-7940dd6c7d2b)
+![image](https://github.com/user-attachments/assets/184a647e-4bde-4520-be49-feaa8810e39a)
+
+
+
+
+
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
