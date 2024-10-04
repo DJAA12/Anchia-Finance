@@ -24,7 +24,7 @@ esta aplicación, los usuarios podrán entender mejor sus hábitos de gasto, ide
 ![image](https://github.com/user-attachments/assets/5e40fa39-f3a2-41d4-8045-646e9124421e)
 ![image](https://github.com/user-attachments/assets/a1d67b1e-ca5a-4095-9abc-d2ea1b4f6522)
 ![image](https://github.com/user-attachments/assets/d63fc33a-b999-4f69-b29e-942c8ad2e830)
-![image](https://github.com/user-attachments/assets/bf4237bc-b14f-4a69-bd85-53657c98d52a)
+![image](https://github.com/user-attachments/assets/45679c08-079f-483a-a8b3-4de6eb3f5427)
 ![image](https://github.com/user-attachments/assets/d827a3b3-a6de-4b33-b728-f8cd39ba79d8)
 ![image](https://github.com/user-attachments/assets/83514dd7-5daf-4117-be75-7940dd6c7d2b)
 ![image](https://github.com/user-attachments/assets/184a647e-4bde-4520-be49-feaa8810e39a)
