@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="AddNewCategory">Agregar Nueva Categoria</string>
+    <string name="AddQuote">Agregar Presupuesto</string>
+    <string name="AddTransaction">Agregar Transacción</string>
+    <string name="Amount">Monto</string>
+    <string name="AvailableBalance">Saldo Disponible</string>
+    <string name="Cancel">Cancelar</string>
+    <string name="Category">Categoria</string>
+    <string name="CreateCategory">Crear Categoria</string>
+    <string name="CurrentBalance">Saldo Actual</string>
+    <string name="Date">Fecha</string>
+    <string name="Delete">Eliminar</string>
+    <string name="Description">Descripcion</string>
+    <string name="Edit">Editar</string>
+    <string name="EditIncome">Editar Ingreso</string>
+    <string name="FinancialSummary">Resumen Financiero</string>
+    <string name="Income">Ingresos</string>
+    <string name="ListCategories">Lista de Categorias</string>
+    <string name="ManageCategories">Gestionar Categorias</string>
+    <string name="ManageTransactions">Gestionar Transacciones</string>
+    <string name="ManagerCategories">Gestionar Categorias</string>
+    <string name="NameCategory">Nombre Categoria</string>
+    <string name="Return">Regresar</string>
+    <string name="Save">Guardar</string>
+    <string name="ShowMainMessage">Para comenzar a gestionar sus finanzas, por favor ingresa un presupuesto inicial</string>
+    <string name="ShowMainTitle">Bienvenido a Anchia Finance</string>
+    <string name="ShowTitle2">Anchia Finance</string>
+    <string name="TotalExpenses">Total Gastos</string>
+    <string name="TotalIncome">Total Ingreso</string>
+    <string name="TransactionList">Listado de Transacciones</string>
+    <string name="TransactionType">Tipo de Transaccion</string>
+    <string name="ViewCategories">Visualiazar Categorias</string>
+    <string name="ViewFinancialSummary">Visualizar Resumen Financiero</string>
+    <string name="app_name">Anchia-Finance</string>
+</resources>

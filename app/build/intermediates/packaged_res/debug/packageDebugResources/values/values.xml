@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="AddNewCategory">Add New Category</string>
+    <string name="AddQuote">Add Quote</string>
+    <string name="AddTransaction">Add Transaction</string>
+    <string name="Amount">Amount</string>
+    <string name="AvailableBalance">Available Balance</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Category">Category</string>
+    <string name="CreateCategory">Create Category</string>
+    <string name="CurrentBalance">Current Balance</string>
+    <string name="Date">Date</string>
+    <string name="Delete">Delete</string>
+    <string name="Description">Description</string>
+    <string name="Edit">Edit</string>
+    <string name="EditIncome">Edit Income</string>
+    <string name="FinancialSummary">Financial Summary</string>
+    <string name="Income">Income</string>
+    <string name="ListCategories">List Categories</string>
+    <string name="ManageCategories">Manage Categories</string>
+    <string name="ManageTransactions">Manage Transactions</string>
+    <string name="ManagerCategories">Manager Categories</string>
+    <string name="NameCategory">Name Category</string>
+    <string name="Return">Return</string>
+    <string name="Save">Save</string>
+    <string name="ShowMainMessage">To begin managing your finances, please enter an initial budget</string>
+    <string name="ShowMainTitle">Welcome Anchia Finance</string>
+    <string name="ShowTitle2">Anchia Finance</string>
+    <string name="TotalExpenses">Total Expenses</string>
+    <string name="TotalIncome">Total Income</string>
+    <string name="TransactionList">Transaction List</string>
+    <string name="TransactionType">Transaction Type</string>
+    <string name="ViewCategories">View Categories</string>
+    <string name="ViewFinancialSummary">View Financial Summary</string>
+    <string name="app_name">Anchia-Finance</string>
+    <style name="Base.Theme.AnchiaFinance" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.AnchiaFinance" parent="Base.Theme.AnchiaFinance"/>
+</resources>
