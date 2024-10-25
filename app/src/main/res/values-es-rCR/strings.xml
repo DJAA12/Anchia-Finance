@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Anchia Finance</string>
+    <string name="titlemain">Bienvenido a Anchia Finance</string>
+    <string name="welcomemessage">Para comenzar a gestionar sus finanzas, por favor ingresa un presupuesto inicial</string>
+    <string name="btnaddbudget">Agregar Presupuesto</string>
+    <string name="title2">Anchia Finance</string>
+    <string name="titlescreenbudget">Agregar Presupuesto</string>
+    <string name="btnsave">Guardar</string>
+    <string name="btncancel">Cancelar</string>
+    <string name="Subtitle">Saldo Disponible</string>
+    <string name="btnmanagecategories">Gestionar Categorias</string>
+    <string name="btnaddtransaction">Agregar Transaccion</string>
+    <string name="btneditincome">Editar Ingreso</string>
+    <string name="titlescreencategories">Gestionar Categorias</string>
+    <string name="btncreatecategories">Crear Categorias</string>
+    <string name="btnviewcategories">Visualizar Categorias</string>
+    <string name="titlescreennewcategory">Agregar una nueva categoria</string>
+    <string name="categoryname">Nombre Categoria</string>
+    <string name="titlescreenlistcategory">Lista de Categorias</string>
+    <string name="btnedit">Editar</string>
+    <string name="btndelete">Eliminar</string>
+    <string name="btnreturn">Regresar</string>
+    <string name="titlescreenaddtransactions">Agregar Transaccion</string>
+    <string name="transactiontype">Tipo Transaccion</string>
+    <string name="amount">Monto</string>
+    <string name="category">Categoria</string>
+    <string name="description">Descripcion</string>
+    <string name="date">Fecha</string>
+    <string name="btnmanagetransactions">Gestionar Transacciones</string>
+    <string name="btnviewfinancialsummary">Visualizar Resumen Financiero</string>
+    <string name="titlescreenSummary">Resumen Financiero</string>
+    <string name="totalincome">Total Ingresos</string>
+    <string name="totalexpenses">Total Gastos</string>
+    <string name="currentbalance">Saldo Actual</string>
+    <string name="titlescreentransactionlist">Listado de Transacciones</string>
+    <string name="income">Ingresos</string>
+    <string name="titlescreeneditincome">Editar Ingresos</string>
+</resources>
