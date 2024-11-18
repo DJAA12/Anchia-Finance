@@ -1,52 +1,65 @@
 package Data
 
-import Entities.Budget
-import Entities.Category
-import Entities.Transaction
+import Entities.FinanceCategory
+import Entities.FinanceTransaction
 import Interfaces.IDBManager
 
-object MemoryManager: IDBManager {
-    private var transactionList = mutableListOf<Transaction>()
-    private var categoryList = mutableListOf<Category>()
-    private var budget: Budget = Budget()
+object MemoryManager : IDBManager {
+    private val categories = mutableListOf<FinanceCategory>()
+    private val transactions = mutableListOf<FinanceTransaction>()
+    private var initialBudget: Double = 0.0
 
-    override fun addTransaction(transaction: Transaction) {
-        transactionList.add(transaction)
-        updateBudget(transaction)
+    override fun addCategory(category: FinanceCategory) {
+        categories.add(category)
     }
 
-    override fun updateTransaction(transaction: Transaction) {
-        removeTransaction(transaction.id)
-        transactionList.add(transaction)
+    override fun getCategories(): List<FinanceCategory> {
+        return categories.toList()
     }
 
-    override fun removeTransaction(id: String) {
-        transactionList.removeIf { it.id == id }
+    override fun getCategoryById(id: Int): FinanceCategory? {
+        return categories.find { it.id == id }
     }
 
-    override fun getAllTransactions(): List<Transaction> = transactionList.toList()
-
-    override fun getTransactionById(id: String): Transaction? {
-        return transactionList.find { it.id == id }
+    override fun updateCategory(category: FinanceCategory) {
+        val index = categories.indexOfFirst { it.id == category.id }
+        if (index != -1) {
+            categories[index] = category
+        }
     }
 
-    override fun addCategory(category: Category) {
-        categoryList.add(category)
+    override fun removeCategory(id: Int) {
+        categories.removeIf { it.id == id }
     }
 
-    override fun getAllCategories(): List<Category> = categoryList.toList()
+    override fun addTransaction(transaction: FinanceTransaction) {
+        transactions.add(transaction)
+    }
+
+    override fun getTransactions(): List<FinanceTransaction> {
+        return transactions.toList()
+    }
+
+    override fun getTransactionById(id: Int): FinanceTransaction? {
+        return transactions.find { it.id == id }
+    }
+
+    override fun updateTransaction(transaction: FinanceTransaction) {
+        val index = transactions.indexOfFirst { it.id == transaction.id }
+        if (index != -1) {
+            transactions[index] = transaction
+        }
+    }
+
+    override fun removeTransaction(id: Int) {
+        transactions.removeIf { it.id == id }
+    }
 
     override fun setInitialBudget(amount: Double) {
-        budget = Budget(amount, amount)
+        initialBudget = amount
     }
 
-    override fun getBudget(): Budget = budget
-
-    private fun updateBudget(transaction: Transaction) {
-        if (transaction.type == "Income") {
-            budget.currentAmount += transaction.amount
-        } else {
-            budget.currentAmount -= transaction.amount
-        }
+    override fun getBudget(): Double {
+        return initialBudget
     }
 }

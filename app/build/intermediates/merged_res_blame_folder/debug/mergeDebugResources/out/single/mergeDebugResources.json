@@ -1,146 +1,126 @@
 [
     {
-        "merged": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchia_finance.app-debug-31:\\mipmap-anydpi_ic_launcher.xml.flat",
-        "source": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchia_finance.app-main-33:\\mipmap-anydpi\\ic_launcher.xml"
+        "merged": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-debug-31:\\layout_activity_category.xml.flat",
+        "source": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-main-33:\\layout\\activity_category.xml"
     },
     {
-        "merged": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchia_finance.app-debug-31:\\layout_activity_agregar_categoria.xml.flat",
-        "source": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchia_finance.app-main-33:\\layout\\activity_agregar_categoria.xml"
+        "merged": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-debug-31:\\menu_menu_main.xml.flat",
+        "source": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-main-33:\\menu\\menu_main.xml"
     },
     {
-        "merged": "com.example.anchia_finance.app-debug-31:/layout_activity_visualizar_resumen_financiero.xml.flat",
-        "source": "com.example.anchia_finance.app-main-33:/layout/activity_visualizar_resumen_financiero.xml"
+        "merged": "com.example.anchiafinance.app-debug-31:/layout_activity_category.xml.flat",
+        "source": "com.example.anchiafinance.app-main-33:/layout/activity_category.xml"
     },
     {
-        "merged": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchia_finance.app-debug-31:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchia_finance.app-main-33:\\xml\\backup_rules.xml"
+        "merged": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-debug-31:\\layout_activity_transaction.xml.flat",
+        "source": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-main-33:\\layout\\activity_transaction.xml"
     },
     {
-        "merged": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchia_finance.app-debug-31:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchia_finance.app-main-33:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-debug-31:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-main-33:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchia_finance.app-debug-31:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchia_finance.app-main-33:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-debug-31:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-main-33:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchia_finance.app-debug-31:\\layout_activity_listado_transacciones.xml.flat",
-        "source": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchia_finance.app-main-33:\\layout\\activity_listado_transacciones.xml"
+        "merged": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-debug-31:\\mipmap-anydpi_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-main-33:\\mipmap-anydpi\\ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchia_finance.app-debug-31:\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchia_finance.app-main-33:\\mipmap-hdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-debug-31:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-main-33:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.anchia_finance.app-debug-31:/layout_activity_gestionar_categorias.xml.flat",
-        "source": "com.example.anchia_finance.app-main-33:/layout/activity_gestionar_categorias.xml"
+        "merged": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-debug-31:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-main-33:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchia_finance.app-debug-31:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchia_finance.app-main-33:\\drawable\\ic_launcher_background.xml"
+        "merged": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-debug-31:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-main-33:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchia_finance.app-debug-31:\\layout_activity_pantalla_principal3.xml.flat",
-        "source": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchia_finance.app-main-33:\\layout\\activity_pantalla_principal3.xml"
+        "merged": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-debug-31:\\layout_activity_transaction_list.xml.flat",
+        "source": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-main-33:\\layout\\activity_transaction_list.xml"
     },
     {
-        "merged": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchia_finance.app-debug-31:\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchia_finance.app-main-33:\\mipmap-xxhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-debug-31:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-main-33:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchia_finance.app-debug-31:\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchia_finance.app-main-33:\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-debug-31:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-main-33:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchia_finance.app-debug-31:\\layout_activity_visualizar_resumen_financiero.xml.flat",
-        "source": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchia_finance.app-main-33:\\layout\\activity_visualizar_resumen_financiero.xml"
+        "merged": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-debug-31:\\layout_activity_finance_main.xml.flat",
+        "source": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-main-33:\\layout\\activity_finance_main.xml"
     },
     {
-        "merged": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchia_finance.app-debug-31:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchia_finance.app-main-33:\\mipmap-xhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-debug-31:\\layout_activity_set_budget.xml.flat",
+        "source": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-main-33:\\layout\\activity_set_budget.xml"
     },
     {
-        "merged": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchia_finance.app-debug-31:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchia_finance.app-main-33:\\mipmap-xhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-debug-31:\\menu_menu_edit.xml.flat",
+        "source": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-main-33:\\menu\\menu_edit.xml"
     },
     {
-        "merged": "com.example.anchia_finance.app-debug-31:/layout_activity_agregar_presupuesto.xml.flat",
-        "source": "com.example.anchia_finance.app-main-33:/layout/activity_agregar_presupuesto.xml"
+        "merged": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-debug-31:\\layout_activity_transaction_detail.xml.flat",
+        "source": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-main-33:\\layout\\activity_transaction_detail.xml"
     },
     {
-        "merged": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchia_finance.app-debug-31:\\layout_activity_agregar_presupuesto.xml.flat",
-        "source": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchia_finance.app-main-33:\\layout\\activity_agregar_presupuesto.xml"
+        "merged": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-debug-31:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-main-33:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchia_finance.app-debug-31:\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchia_finance.app-main-33:\\mipmap-mdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-debug-31:\\layout_custom_transaction_item.xml.flat",
+        "source": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-main-33:\\layout\\custom_transaction_item.xml"
     },
     {
-        "merged": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchia_finance.app-debug-31:\\layout_activity_visualisar_lista_categorias.xml.flat",
-        "source": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchia_finance.app-main-33:\\layout\\activity_visualisar_lista_categorias.xml"
+        "merged": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-debug-31:\\layout_custom_category_item.xml.flat",
+        "source": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-main-33:\\layout\\custom_category_item.xml"
     },
     {
-        "merged": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchia_finance.app-debug-31:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchia_finance.app-main-33:\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-debug-31:\\layout_activity_summary.xml.flat",
+        "source": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-main-33:\\layout\\activity_summary.xml"
     },
     {
-        "merged": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchia_finance.app-debug-31:\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchia_finance.app-main-33:\\mipmap-mdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-debug-31:\\layout_activity_category_detail.xml.flat",
+        "source": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-main-33:\\layout\\activity_category_detail.xml"
     },
     {
-        "merged": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchia_finance.app-debug-31:\\drawable_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchia_finance.app-main-33:\\drawable\\ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-debug-31:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-main-33:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "com.example.anchia_finance.app-debug-31:/layout_activity_main.xml.flat",
-        "source": "com.example.anchia_finance.app-main-33:/layout/activity_main.xml"
+        "merged": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-debug-31:\\mipmap-anydpi_ic_launcher.xml.flat",
+        "source": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-main-33:\\mipmap-anydpi\\ic_launcher.xml"
     },
     {
-        "merged": "com.example.anchia_finance.app-debug-31:/layout_activity_pantalla_principal3.xml.flat",
-        "source": "com.example.anchia_finance.app-main-33:/layout/activity_pantalla_principal3.xml"
+        "merged": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-debug-31:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-main-33:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchia_finance.app-debug-31:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchia_finance.app-main-33:\\xml\\data_extraction_rules.xml"
+        "merged": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-debug-31:\\xml_file_paths.xml.flat",
+        "source": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-main-33:\\xml\\file_paths.xml"
     },
     {
-        "merged": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchia_finance.app-debug-31:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchia_finance.app-main-33:\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-debug-31:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-main-33:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.anchia_finance.app-debug-31:/layout_activity_listado_transacciones.xml.flat",
-        "source": "com.example.anchia_finance.app-main-33:/layout/activity_listado_transacciones.xml"
+        "merged": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-debug-31:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-main-33:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchia_finance.app-debug-31:\\mipmap-anydpi_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchia_finance.app-main-33:\\mipmap-anydpi\\ic_launcher_round.xml"
+        "merged": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-debug-31:\\layout_activity_category_list.xml.flat",
+        "source": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-main-33:\\layout\\activity_category_list.xml"
     },
     {
-        "merged": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchia_finance.app-debug-31:\\layout_activity_pantalla_principal2.xml.flat",
-        "source": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchia_finance.app-main-33:\\layout\\activity_pantalla_principal2.xml"
+        "merged": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-debug-31:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-main-33:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "com.example.anchia_finance.app-debug-31:/layout_activity_visualisar_lista_categorias.xml.flat",
-        "source": "com.example.anchia_finance.app-main-33:/layout/activity_visualisar_lista_categorias.xml"
-    },
-    {
-        "merged": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchia_finance.app-debug-31:\\layout_activity_agregar_transacciones.xml.flat",
-        "source": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchia_finance.app-main-33:\\layout\\activity_agregar_transacciones.xml"
-    },
-    {
-        "merged": "com.example.anchia_finance.app-debug-31:/layout_activity_agregar_transacciones.xml.flat",
-        "source": "com.example.anchia_finance.app-main-33:/layout/activity_agregar_transacciones.xml"
-    },
-    {
-        "merged": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchia_finance.app-debug-31:\\layout_activity_gestionar_categorias.xml.flat",
-        "source": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchia_finance.app-main-33:\\layout\\activity_gestionar_categorias.xml"
-    },
-    {
-        "merged": "com.example.anchia_finance.app-debug-31:/layout_activity_agregar_categoria.xml.flat",
-        "source": "com.example.anchia_finance.app-main-33:/layout/activity_agregar_categoria.xml"
-    },
-    {
-        "merged": "com.example.anchia_finance.app-debug-31:/layout_activity_pantalla_principal2.xml.flat",
-        "source": "com.example.anchia_finance.app-main-33:/layout/activity_pantalla_principal2.xml"
+        "merged": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-debug-31:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\cachi\\.gradle\\daemon\\8.7\\com.example.anchiafinance.app-main-33:\\drawable\\ic_launcher_foreground.xml"
     }
 ]

@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <TextView
+        android:id="@+id/lblAvailableBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/available_balance2"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF" />
+
+    <Spinner
+        android:id="@+id/spnType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblAvailableBalance"
+        android:layout_margin="16dp"
+        android:background="#FFFFFF"
+        android:spinnerMode="dropdown" />
+
+    <Spinner
+        android:id="@+id/spnCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spnType"
+        android:layout_margin="16dp"
+        android:background="#FFFFFF"
+        android:spinnerMode="dropdown" />
+
+    <EditText
+        android:id="@+id/txtAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/amount_hint"
+        android:layout_below="@id/spnCategory"
+        android:layout_margin="16dp"
+        android:background="#FFFFFF"
+        android:textColor="#000000"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/txtDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/description_hint"
+        android:layout_below="@id/txtAmount"
+        android:layout_margin="16dp"
+        android:background="#FFFFFF"
+        android:textColor="#000000" />
+
+    <ImageView
+        android:id="@+id/imgTransactionPhoto"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/txtDescription"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        android:background="@android:color/darker_gray" />
+
+    <Button
+        android:id="@+id/btnAddPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgTransactionPhoto"
+        android:layout_margin="16dp"
+        android:text="@string/select_photo"
+        android:background="@android:color/holo_green_dark"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btnSaveTransaction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAddPhoto"
+        android:layout_margin="16dp"
+        android:text="@string/save_transaction"
+        android:background="@android:color/holo_blue_dark"
+        android:textColor="@android:color/white" />
+</RelativeLayout>

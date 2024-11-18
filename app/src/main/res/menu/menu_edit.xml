@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mnu_save"
+        android:title="@string/save"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/mnu_delete"
+        android:enabled="true"
+        android:title="@string/remove"
+        android:visible="true"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/mnu_cancel"
+        android:title="@string/cancel"
+        app:showAsAction="always" />
+</menu>

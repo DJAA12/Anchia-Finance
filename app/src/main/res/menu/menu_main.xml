@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/mnu_category"
+        android:title="@string/menu_manage_categories"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/mnu_transactions"
+        android:title="@string/menu_manage_transactions"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/mnu_summary"
+        android:title="@string/menu_financial_summary"
+        app:showAsAction="never" />
+
+</menu>

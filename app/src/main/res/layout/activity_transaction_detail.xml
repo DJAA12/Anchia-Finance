@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lblTransactionId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/transaction_id"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="8dp" />
+
+        <Spinner
+            android:id="@+id/spnTransactionType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="#FFFFFF"
+            android:padding="8dp"
+            android:textColor="#000000" />
+
+        <Spinner
+            android:id="@+id/spnTransactionCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="#FFFFFF"
+            android:padding="8dp"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/txtTransactionAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/amount_hint"
+            android:layout_marginBottom="16dp"
+            android:background="#FFFFFF"
+            android:textColor="#000000"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/txtTransactionDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/description_hint"
+            android:layout_marginBottom="16dp"
+            android:background="#FFFFFF"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/lblTransactionDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/date"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp" />
+
+        <ImageView
+            android:id="@+id/imgTransactionPhoto"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:scaleType="centerCrop"
+            android:background="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/btnEditPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_photo"
+            android:layout_marginBottom="16dp"
+            android:background="@android:color/holo_green_dark"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            android:layout_marginBottom="16dp"
+            android:background="@android:color/holo_blue_dark"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</ScrollView>
