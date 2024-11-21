@@ -115,4 +115,18 @@
         <item>@string/transaction_type_income</item>
         <item>@string/transaction_type_expense</item>
     </string-array>
+    <string name="no_categories_available">No categories available</string>
+    <string name="error_fetch_budget">Failed to fetch budget: %1$s</string>
+    <string name="error_set_budget">Failed to set budget: %1$s</string>
+    <string name="error_loading_budget">Failed to load budget: %1$s</string>
+    <string name="error_saving_budget">Failed to save budget: %1$s</string>
+    <string name="error_loading_summary">Error loading summary</string>
+    <string name="error_loading_balance">Failed to load balance. Please try again.</string>
+    <string name="error_loading_categories">Failed to load categories. Please try again.</string>
+    <string name="error_saving_transaction">Failed to save the transaction. Please try again.</string>
+    <string name="error_delete_transaction">Error deleting transaction: %1$s</string>
+    <string name="error_loading_transactions">Error loading transactions: %1$s</string>
+    <string name="error_loading_balance2">Error loading balance: %1$s</string>
+    <string name="error_navigation2">Navigation error: %1$s</string>
+    <string name="error_parsing_amount">Error parsing amount. Please enter a valid amount.</string>
 </resources>

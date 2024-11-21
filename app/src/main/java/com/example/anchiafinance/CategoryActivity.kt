@@ -176,8 +176,8 @@ class CategoryActivity : AppCompatActivity() {
             return
         }
 
-        val id = financeModel.getCategories().size + 1
-        financeModel.addCategory(FinanceCategory(id, name, categoryPhoto))
+        val category = FinanceCategory(0, name, categoryPhoto)
+        financeModel.addCategory(category)
 
         txtCategoryName.text.clear()
         imgCategoryPhoto.setImageResource(android.R.color.transparent)

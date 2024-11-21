@@ -116,5 +116,19 @@
         <item>@string/transaction_type_income</item>
         <item>@string/transaction_type_expense</item>
     </string-array>
+    <string name="no_categories_available">No hay categorías disponibles</string>
+    <string name="error_fetch_budget">Error al obtener el presupuesto: %1$s</string>
+    <string name="error_set_budget">Error al establecer el presupuesto: %1$s</string>
+    <string name="error_loading_budget">No se pudo cargar el presupuesto: %1$s</string>
+    <string name="error_saving_budget">No se pudo guardar el presupuesto: %1$s</string>
+    <string name="error_loading_summary">Error al cargar el resumen</string>
+    <string name="error_loading_balance">Error al cargar el saldo. Por favor, inténtalo de nuevo.</string>
+    <string name="error_loading_categories">Error al cargar las categorías. Por favor, inténtalo de nuevo.</string>
+    <string name="error_saving_transaction">Error al guardar la transacción. Por favor, inténtalo de nuevo.</string>
+    <string name="error_delete_transaction">Error al eliminar la transacción: %1$s</string>
+    <string name="error_loading_transactions">Error al cargar las transacciones: %1$s</string>
+    <string name="error_loading_balance2">Error al cargar el balance: %1$s</string>
+    <string name="error_navigation2">Error de navegación: %1$s</string>
+    <string name="error_parsing_amount">Error al procesar el monto. Por favor, ingrese un monto válido.</string>
 </resources>
 

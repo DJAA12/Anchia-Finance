@@ -9,7 +9,6 @@ import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.anchiafinance.SetBudgetActivity.Companion.budget
 
 class FinanceMainActivity : AppCompatActivity() {
     private lateinit var lblBalance: TextView
@@ -19,7 +18,6 @@ class FinanceMainActivity : AppCompatActivity() {
     private lateinit var btnViewCategoryList: Button
     private lateinit var btnViewTransactionList: Button
     private val financeModel = FinanceModel(this)
-
     private var isFirstTime = true
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -61,7 +59,8 @@ class FinanceMainActivity : AppCompatActivity() {
     }
 
     private fun checkAndRequestBudget() {
-        if (budget == null || budget <= 0.0) {
+        val budget = financeModel.getBudget() ?: 0.0
+        if (budget <= 0.0) {
             Toast.makeText(this, getString(R.string.no_balance_warning), Toast.LENGTH_SHORT).show()
             startActivityForResult(Intent(this, SetBudgetActivity::class.java), REQUEST_BUDGET)
         } else {
@@ -71,16 +70,17 @@ class FinanceMainActivity : AppCompatActivity() {
     }
 
     private fun updateBalance() {
-        val totalBalance = calculateTotalBalance()
-        lblBalance.text = if (totalBalance.isFinite()) {
-            getString(R.string.available_balance2, totalBalance)
-        } else {
-            getString(R.string.balance_error)
+        try {
+            val totalBalance = calculateTotalBalance()
+            lblBalance.text = getString(R.string.available_balance2, totalBalance)
+        } catch (e: Exception) {
+            val errorMessage = getString(R.string.error_loading_balance2, e.message ?: "Unknown error")
+            Toast.makeText(this, errorMessage, Toast.LENGTH_SHORT).show()
         }
     }
 
     private fun calculateTotalBalance(): Double {
-        val initialBudget = budget ?: 0.0
+        val budget = financeModel.getBudget() ?: 0.0
         val transactions = financeModel.getTransactions()
 
         val incomeType = getString(R.string.transaction_type_income)
@@ -88,7 +88,7 @@ class FinanceMainActivity : AppCompatActivity() {
 
         val totalIncome = transactions.filter { it.type == incomeType }.sumOf { it.amount }
         val totalExpense = transactions.filter { it.type == expenseType }.sumOf { it.amount }
-        return initialBudget + totalIncome - totalExpense
+        return budget + totalIncome - totalExpense
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -131,7 +131,8 @@ class FinanceMainActivity : AppCompatActivity() {
         try {
             startActivity(intent)
         } catch (e: Exception) {
-            Toast.makeText(this, getString(R.string.error_navigation), Toast.LENGTH_SHORT).show()
+            val errorMessage = getString(R.string.error_navigation2, e.message ?: "Unknown error")
+            Toast.makeText(this, errorMessage, Toast.LENGTH_SHORT).show()
         }
     }
 

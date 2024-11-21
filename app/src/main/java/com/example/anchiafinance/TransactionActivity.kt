@@ -1,25 +1,27 @@
 package com.example.anchiafinance
 
+import Entities.FinanceCategory
+import Entities.FinanceTransaction
 import android.Manifest
+import android.app.AlertDialog
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.Bitmap
 import android.net.Uri
 import android.os.Bundle
 import android.provider.MediaStore
-import android.view.Menu
-import android.view.MenuItem
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.core.content.FileProvider
-import androidx.appcompat.app.AlertDialog
-import Entities.FinanceTransaction
 import Model.FinanceModel
-import com.example.anchiafinance.SetBudgetActivity.Companion.budget
+import android.view.Menu
+import android.view.MenuItem
 import java.io.File
 import java.io.IOException
+import java.text.DecimalFormat
+import java.text.DecimalFormatSymbols
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -68,14 +70,28 @@ class TransactionActivity : AppCompatActivity() {
     }
 
     private fun updateAvailableBalance() {
-        val totalIncome = budget + financeModel.getTransactions().filter {
-            it.type == getString(R.string.transaction_type_income)
-        }.sumOf { it.amount }
-        val totalExpense = financeModel.getTransactions().filter {
-            it.type == getString(R.string.transaction_type_expense)
-        }.sumOf { it.amount }
-        val balance = totalIncome - totalExpense
-        lblAvailableBalance.text = String.format(getString(R.string.available_balance2), balance)
+        try {
+
+            val transactions = financeModel.getTransactions()
+
+
+            val totalIncome = transactions.filter { it.type == getString(R.string.transaction_type_income) }
+                .sumOf { it.amount }
+
+
+            val totalExpense = transactions.filter { it.type == getString(R.string.transaction_type_expense) }
+                .sumOf { it.amount }
+
+
+            val budget = financeModel.getBudget() ?: 0.0
+
+
+            val balance = budget + totalIncome - totalExpense
+            lblAvailableBalance.text = String.format(getString(R.string.available_balance2), balance)
+
+        } catch (e: Exception) {
+            lblAvailableBalance.text = getString(R.string.error_loading_balance)
+        }
     }
 
     private fun setupSpinners() {
@@ -84,16 +100,20 @@ class TransactionActivity : AppCompatActivity() {
         typeAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         spnType.adapter = typeAdapter
 
-        val categories = financeModel.getCategories().map { it.name }
-        val categoryAdapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, categories)
-        categoryAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-        spnCategory.adapter = categoryAdapter
+        try {
+            val categories = financeModel.getCategories().map { it.name }
+            val categoryAdapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, categories)
+            categoryAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+            spnCategory.adapter = categoryAdapter
+        } catch (e: Exception) {
+            Toast.makeText(this, getString(R.string.error_loading_categories), Toast.LENGTH_SHORT).show()
+        }
     }
 
     private fun saveTransaction() {
         val type = spnType.selectedItem?.toString() ?: ""
         val category = spnCategory.selectedItem?.toString() ?: ""
-        val amount = txtAmount.text.toString().toDoubleOrNull()
+        val amountString = txtAmount.text.toString()
         val description = txtDescription.text.toString()
 
         if (type.isEmpty()) {
@@ -106,36 +126,33 @@ class TransactionActivity : AppCompatActivity() {
             return
         }
 
-        if (amount == null || amount <= 0) {
+        if (amountString.isEmpty()) {
             Toast.makeText(this, getString(R.string.enter_valid_amount), Toast.LENGTH_SHORT).show()
             return
         }
 
-        if (description.isEmpty()) {
-            Toast.makeText(this, getString(R.string.enter_description), Toast.LENGTH_SHORT).show()
+
+        val decimalFormatSymbols = DecimalFormatSymbols(Locale.getDefault())
+        decimalFormatSymbols.groupingSeparator = ','
+        decimalFormatSymbols.decimalSeparator = '.'
+
+        val decimalFormat = DecimalFormat("#,##0.00", decimalFormatSymbols)
+
+        val amount: Double
+        try {
+            amount = decimalFormat.parse(amountString)?.toDouble() ?: 0.0
+        } catch (e: Exception) {
+            Toast.makeText(this, getString(R.string.error_parsing_amount), Toast.LENGTH_SHORT).show()
             return
         }
 
-        if (transactionPhoto == null) {
-            Toast.makeText(this, getString(R.string.add_photo_warning), Toast.LENGTH_SHORT).show()
-            return
-        }
-
-        val totalIncome = budget + financeModel.getTransactions().filter {
-            it.type == getString(R.string.transaction_type_income)
-        }.sumOf { it.amount }
-        val totalExpense = financeModel.getTransactions().filter {
-            it.type == getString(R.string.transaction_type_expense)
-        }.sumOf { it.amount }
-        val balance = totalIncome - totalExpense
-
-        if (type == getString(R.string.transaction_type_expense) && amount > balance) {
-            Toast.makeText(this, getString(R.string.insufficient_balance), Toast.LENGTH_SHORT).show()
+        if (amount <= 0) {
+            Toast.makeText(this, getString(R.string.enter_valid_amount), Toast.LENGTH_SHORT).show()
             return
         }
 
         val transaction = FinanceTransaction(
-            id = financeModel.getTransactions().size + 1,
+            id = 0,
             type = type,
             category = category,
             amount = amount,
@@ -143,10 +160,15 @@ class TransactionActivity : AppCompatActivity() {
             date = Date(),
             photo = transactionPhoto
         )
-        financeModel.addTransaction(transaction)
-        Toast.makeText(this, getString(R.string.transaction_saved), Toast.LENGTH_SHORT).show()
-        clearFields()
-        updateAvailableBalance()
+
+        try {
+            financeModel.addTransaction(transaction)
+            Toast.makeText(this, getString(R.string.transaction_saved), Toast.LENGTH_SHORT).show()
+            clearFields()
+            updateAvailableBalance()
+        } catch (e: Exception) {
+            Toast.makeText(this, getString(R.string.error_saving_transaction), Toast.LENGTH_SHORT).show()
+        }
     }
 
     private fun clearFields() {
@@ -170,16 +192,8 @@ class TransactionActivity : AppCompatActivity() {
     }
 
     private fun checkCameraPermissionAndOpenCamera() {
-        if (ContextCompat.checkSelfPermission(
-                this,
-                Manifest.permission.CAMERA
-            ) != PackageManager.PERMISSION_GRANTED
-        ) {
-            ActivityCompat.requestPermissions(
-                this,
-                arrayOf(Manifest.permission.CAMERA),
-                REQUEST_CAMERA_PERMISSION
-            )
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.CAMERA), REQUEST_CAMERA_PERMISSION)
         } else {
             openCamera()
         }

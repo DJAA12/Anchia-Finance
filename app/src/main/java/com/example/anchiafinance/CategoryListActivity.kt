@@ -5,6 +5,7 @@ import Entities.FinanceCategory
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ListView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import Model.FinanceModel
 
@@ -28,15 +29,22 @@ class CategoryListActivity : AppCompatActivity() {
     }
 
     private fun updateCategoryList() {
-        val categories = financeModel.getCategories()
-        adapter = CategoryListAdapter(this, R.layout.custom_category_item, categories)
-        lstCategories.adapter = adapter
+        try {
+            val categories = financeModel.getCategories()
+            if (categories.isNotEmpty()) {
+                adapter = CategoryListAdapter(this, R.layout.custom_category_item, categories)
+                lstCategories.adapter = adapter
+            } else {
+                Toast.makeText(this, getString(R.string.no_categories_available), Toast.LENGTH_SHORT).show()
+            }
+        } catch (e: Exception) {
+            Toast.makeText(this, getString(R.string.error_fetch_categories), Toast.LENGTH_SHORT).show()
+        }
     }
 
     private fun openCategoryDetails(category: FinanceCategory) {
         val intent = Intent(this, CategoryDetailActivity::class.java)
         intent.putExtra("CATEGORY_ID", category.id)
-        intent.putExtra("CATEGORY_NAME", category.name)
         startActivity(intent)
     }
 }

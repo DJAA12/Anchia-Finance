@@ -197,9 +197,13 @@ class TransactionDetailActivity : AppCompatActivity() {
             photo = transactionPhoto
         )
 
-        financeModel.updateTransaction(updatedTransaction)
-        Toast.makeText(this, getString(R.string.transaction_updated), Toast.LENGTH_SHORT).show()
-        finish()
+        try {
+            financeModel.updateTransaction(updatedTransaction)
+            Toast.makeText(this, getString(R.string.transaction_updated), Toast.LENGTH_SHORT).show()
+            finish()
+        } catch (e: Exception) {
+            Toast.makeText(this, getString(R.string.error_update_transaction, e.message), Toast.LENGTH_SHORT).show()
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -226,8 +230,12 @@ class TransactionDetailActivity : AppCompatActivity() {
     }
 
     private fun confirmDeleteTransaction() {
-        financeModel.removeTransaction(transactionId)
-        Toast.makeText(this, getString(R.string.transaction_deleted), Toast.LENGTH_SHORT).show()
-        finish()
+        try {
+            financeModel.removeTransaction(transactionId)
+            Toast.makeText(this, getString(R.string.transaction_deleted), Toast.LENGTH_SHORT).show()
+            finish()
+        } catch (e: Exception) {
+            Toast.makeText(this, getString(R.string.error_delete_transaction, e.message), Toast.LENGTH_SHORT).show()
+        }
     }
 }

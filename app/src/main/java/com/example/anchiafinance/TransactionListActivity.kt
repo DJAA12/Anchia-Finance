@@ -38,12 +38,16 @@ class TransactionListActivity : AppCompatActivity() {
     }
 
     private fun updateTransactionList() {
-        val transactions = financeModel.getTransactions()
-        if (transactions.isNotEmpty()) {
-            adapter = TransactionListAdapter(this, R.layout.custom_transaction_item, transactions)
-            lstTransactions.adapter = adapter
-        } else {
-            Toast.makeText(this, getString(R.string.no_transactions_available), Toast.LENGTH_SHORT).show()
+        try {
+            val transactions = financeModel.getTransactions()
+            if (transactions.isNotEmpty()) {
+                adapter = TransactionListAdapter(this, R.layout.custom_transaction_item, transactions)
+                lstTransactions.adapter = adapter
+            } else {
+                Toast.makeText(this, getString(R.string.no_transactions_available), Toast.LENGTH_SHORT).show()
+            }
+        } catch (e: Exception) {
+            Toast.makeText(this, getString(R.string.error_loading_transactions, e.message), Toast.LENGTH_SHORT).show()
         }
     }
 
