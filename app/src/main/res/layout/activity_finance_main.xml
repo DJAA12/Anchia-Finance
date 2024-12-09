@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/lblBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/available_balance"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnManageCategories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblBalance"
+        android:layout_margin="16dp"
+        android:text="@string/manage_categories" />
+
+    <Button
+        android:id="@+id/btnAddTransaction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnManageCategories"
+        android:layout_margin="16dp"
+        android:text="@string/add_transaction" />
+
+    <Button
+        android:id="@+id/btnViewSummary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAddTransaction"
+        android:layout_margin="16dp"
+        android:text="@string/view_summary" />
+
+    <Button
+        android:id="@+id/btnViewCategoryList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnViewSummary"
+        android:layout_margin="16dp"
+        android:text="@string/view_category_list" />
+
+    <Button
+        android:id="@+id/btnViewTransactionList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnViewCategoryList"
+        android:layout_margin="16dp"
+        android:text="@string/view_transaction_list" />
+</RelativeLayout>

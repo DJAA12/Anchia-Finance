@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.anchia_finance"
+    package="com.example.anchiafinance"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -8,11 +8,14 @@
         android:minSdkVersion="30"
         android:targetSdkVersion="34" />
 
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <permission
-        android:name="com.example.anchia_finance.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:name="com.example.anchiafinance.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="com.example.anchia_finance.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+    <uses-permission android:name="com.example.anchiafinance.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 
     <application
         android:allowBackup="true"
@@ -28,34 +31,42 @@
         android:testOnly="true"
         android:theme="@style/Theme.AnchiaFinance" >
         <activity
-            android:name="com.example.anchia_finance.ListadoTransacciones"
+            android:name="com.example.anchiafinance.SummaryActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.anchia_finance.VisualizarResumenFinanciero"
+            android:name="com.example.anchiafinance.TransactionActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.anchia_finance.PantallaPrincipal3"
+            android:name="com.example.anchiafinance.TransactionListActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.anchia_finance.AgregarTransacciones"
+            android:name="com.example.anchiafinance.CategoryListActivity"
+            android:exported="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.anchiafinance.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name="com.example.anchiafinance.SetBudgetActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.anchia_finance.VisualisarListaCategorias"
+            android:name="com.example.anchiafinance.CategoryDetailActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.anchia_finance.AgregarCategoria"
+            android:name="com.example.anchiafinance.TransactionDetailActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.anchia_finance.GestionarCategorias"
+            android:name="com.example.anchiafinance.CategoryActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.anchia_finance.PantallaPrincipal2"
-            android:exported="false" />
-        <activity
-            android:name="com.example.anchia_finance.AgregarPresupuesto"
-            android:exported="false" />
-        <activity
-            android:name="com.example.anchia_finance.MainActivity"
+            android:name="com.example.anchiafinance.FinanceMainActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -66,7 +77,7 @@
 
         <provider
             android:name="androidx.startup.InitializationProvider"
-            android:authorities="com.example.anchia_finance.androidx-startup"
+            android:authorities="com.example.anchiafinance.androidx-startup"
             android:exported="false" >
             <meta-data
                 android:name="androidx.emoji2.text.EmojiCompatInitializer"

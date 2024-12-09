@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.anchia_finance.app-mergeDebugResources-29:/values-small-v4/values-small-v4.xml",
+            "outputFile": "com.example.anchiafinance.app-mergeDebugResources-29:/values-small-v4/values-small-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\cachi\\.gradle\\caches\\transforms-4\\339bfe905bef2f66b5c7ec6f545fdb59\\transformed\\material-1.10.0\\res\\values-small-v4\\values-small-v4.xml",
+                    "source": "C:\\Users\\cachi\\.gradle\\caches\\transforms-4\\86c9a9e55dc8d45fef0ed473fafdfd97\\transformed\\material-1.12.0\\res\\values-small-v4\\values-small-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
